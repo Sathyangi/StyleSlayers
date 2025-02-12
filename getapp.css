@@ -1,0 +1,79 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column; /* Stack welcome and preview vertically */
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #cfcbcb;
+}
+.back-button {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+}
+.back-button a {
+  text-decoration: none;
+  color: white;
+  background-color: #0e0e0e; /* Bootstrap primary color */
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.back-button a:hover {
+  background-color: #4a86c7; /* Darker shade on hover */
+}
+
+.welcome {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px; /* Space between welcome and preview */
+  width: 80%; /* Occupy most of the screen width */
+  max-width: 600px; /* Set a maximum width to prevent it from becoming too wide */
+}
+.welcome h1 {
+  margin-bottom: 10px;
+}
+.app-store-preview {
+  background-color: #fff;
+  padding: 20px; /* Add padding back to the preview */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 80%;  /* Match welcome width */
+  max-width: 600px; /* Match welcome max-width */
+}
+.app-icon {
+  width: 150px;  /* Adjust icon size as needed */
+  height: 150px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.app-info {
+  flex: 1; /* Takes up available space */
+}
+.rating {
+  color: gold;
+  margin-bottom: 10px;
+}
+.price {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.download-buttons {
+  display: flex;
+  gap: 10px;
+}
+.app-store-button,.play-store-button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+.app-store-button {
+  background-color: #007aff; 
+}
+.play-store-button {
+  background-color:green;
+}

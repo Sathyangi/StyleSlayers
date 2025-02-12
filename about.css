@@ -1,0 +1,114 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center the navigation items */
+}
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About Banner Section */
+.about-banner {
+    position: relative;
+    overflow: hidden; /* Ensure image covers the container */
+}
+
+.about-banner img {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevents a small gap below the image */
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(3, 3, 3, 0.5); /* Semi-transparent black overlay */
+    padding: 20px;
+    width: 80%; /* Adjust as needed */
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.banner-content button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* About Us Section */
+.about-us {
+    text-align: center; /* Center the content */
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-us h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-us ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    text-align: left; /* Align list items to the left */
+}
+
+.about-us li {
+    margin-bottom: 10px;
+}
