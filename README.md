@@ -1,4 +1,4 @@
-StyleSlayers
+# StyleSlayers
 Style Slayers: Your Fashion & Beauty Hub (Frontend)
 
 Welcome to the frontend repository for Style Slayers, your ultimate online destination for fashion, beauty, and bridal wear. This project delivers a sleek and intuitive user experience, showcasing a wide range of products across various categories.
