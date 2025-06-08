@@ -10,81 +10,88 @@
 <body>
     <div class="header">
         <div class="left">
-            <button onclick="redirectTo('getapp.html')">Download the app</button>
-            <button onclick="redirectTo('About.html')">About</button>
+            <button onclick="redirectTo('getapp.html')" data-i18n="download_app_button">Download the app</button>
+            <button onclick="redirectTo('About.html')" data-i18n="about_button">About</button>
         </div>
         <div class="center">
-            <img src = "img/FS.jpg" alt="logo" width="30%" height="20%" class="logo">
+            <img src="img/FS.jpg" alt="logo" width="30%" height="20%" class="logo">
         </div>
         <div class="right">
-            <input type="text" placeholder="Search..." class="search-bar">
-            <button onclick="redirectTo('Login.html')">Login</button>
+            <input type="text" placeholder="Search..." class="search-bar" data-i18n-placeholder="search_placeholder">
+            <button onclick="redirectTo('Login.html')" data-i18n="login_button">Login</button>
+            <select id="language-selector" onchange="setLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="si">සිංහල (Sinhala)</option>
+                <option value="ta">தமிழ் (Tamil)</option>
+                <option value="ja">日本語 (Japanese)</option>
+            </select>
         </div>
     </div>
 
     <div class="container">
         <div class="item">
             <img src="img/fashion.png" alt="Fashion & Accessories">
-            <h3>Fashion & Accessories</h3>
-            <p>Witness the evolution of style in our new collection.</p>
-            <button onclick="redirectTo('fashion.html')">Shop Now</button>
+            <h3 data-i18n="fashion_title">Fashion & Accessories</h3>
+            <p data-i18n="fashion_description">Witness the evolution of style in our new collection.</p>
+            <button onclick="redirectTo('fashion.html')" data-i18n="shop_now_button">Shop Now</button>
         </div>
         <div class="item">
             <img src="img/beauty.jpg" alt="Fragrance & Beauty">
-            <h3>Fragrance & Beauty</h3>
-            <p>Discover exquisite scents and beauty products.</p>
-            <button onclick="redirectTo('beauty.html')">Shop Now</button>
+            <h3 data-i18n="fragrance_title">Fragrance & Beauty</h3>
+            <p data-i18n="fragrance_description">Discover exquisite scents and beauty products.</p>
+            <button onclick="redirectTo('beauty.html')" data-i18n="shop_now_button">Shop Now</button>
         </div>
         <div class="item">
             <img src="img/bride.jpg" alt="Bridal Fashion">
-            <h3>Bridal Fashion</h3>
-            <p>Experience elegant, sophisticated bridal fashion.</p>
-            <button onclick="redirectTo('bridal.html')">Shop Now</button>
+            <h3 data-i18n="bridal_title">Bridal Fashion</h3>
+            <p data-i18n="bridal_description">Experience elegant, sophisticated bridal fashion.</p>
+            <button onclick="redirectTo('bridal.html')" data-i18n="shop_now_button">Shop Now</button>
         </div>
     </div>
 
     <footer>
-      <div class="container">
-          <div class="column">
-              <h3>Customer Care</h3>
-              <ul>
-                  <li><a href="#">FAQs</a></li>
-                  <li><a href="#">Shipping & Delivery</a></li>
-                  <li><a href="#">Return & Exchange</a></li>
-              </ul>
-          </div>
-          <div class="column">
-              <h3>Company Info</h3>
-              <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms and Conditions</a></li>
-              </ul>
-          </div>
-          <div class="column">
-              <h3>Quick Link</h3>
-              <ul>
-                  <li><a href="#">Track Order</a></li>
-                  <li><a href="#">How To Write A Review</a></li>
-              </ul>
-          </div>
-          <div class="column">
-              <h3>Newsletter</h3>
-              <p>Check your email to confirm your subscription.</p>
-              <form>
-                  <input type="email" placeholder="Enter Your Email Address">
-                  <button type="submit">Subscribe</button>
-              </form>
-              <div class="social-icons">
-                  <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#" class="icon"><i class="fab fa-pinterest"></i></a>
-                  <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
-                  <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
-                  <a href="#" class="icon"><i class="fab fa-tiktok"></i></a>
-              </div>
-          </div>
-      </div>
-  </footer>
-  
+        <div class="container">
+            <div class="column">
+                <h3 data-i18n="customer_care_title">Customer Care</h3>
+                <ul>
+                    <li><a href="#" data-i18n="faqs_link">FAQs</a></li>
+                    <li><a href="#" data-i18n="shipping_link">Shipping & Delivery</a></li>
+                    <li><a href="#" data-i18n="returns_link">Return & Exchange</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3 data-i18n="company_info_title">Company Info</h3>
+                <ul>
+                    <li><a href="#" data-i18n="about_us_link">About Us</a></li>
+                    <li><a href="#" data-i18n="privacy_policy_link">Privacy Policy</a></li>
+                    <li><a href="#" data-i18n="terms_conditions_link">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3 data-i18n="quick_link_title">Quick Link</h3>
+                <ul>
+                    <li><a href="#" data-i18n="track_order_link">Track Order</a></li>
+                    <li><a href="#" data-i18n="write_review_link">How To Write A Review</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3 data-i18n="newsletter_title">Newsletter</h3>
+                <p data-i18n="newsletter_description">Check your email to confirm your subscription.</p>
+                <form>
+                    <input type="email" placeholder="Enter Your Email Address" data-i18n-placeholder="email_placeholder">
+                    <button type="submit" data-i18n="subscribe_button">Subscribe</button>
+                </form>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
     <script src="myweb.js"></script>
 </body>
+</html>
