@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Style Slayers</title>
+  <link rel="stylesheet" href="about.css" />
+  <script src="https://kit.fontawesome.com/9af7bd250c.js" crossorigin="anonymous"></script>
+  <style>
+    /* Language selector styles */
+    #language-selector {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    #language-selector select {
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+    #language-selector option {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="myweb.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="fashion.html" data-i18n="nav_fashion">Fashion & Accessories</a></li>
+        <li><a href="beauty.html" data-i18n="nav_beauty">Fragrance & Beauty</a></li>
+        <li><a href="bridal.html" data-i18n="nav_bridal">Bridal Fashion</a></li>
+      </ul>
+    </nav>
+
+    <!-- Language Selector Dropdown -->
+    <div id="language-selector">
+      <select id="lang-select" aria-label="Select Language">
+        <option value="en"><img src="https://flagcdn.com/w20/us.png" alt="English"> English</option>
+        <option value="si">🇱🇰 සිංහල (Sinhala)</option>
+        <option value="ta">🇮🇳 தமிழ் (Tamil)</option>
+        <option value="ja">🇯🇵 日本語 (Japanese)</option>
+        <option value="ko">🇰🇷 한국어 (Korean)</option>
+        <option value="fr">🇫🇷 Français(French)</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <center><h1 data-i18n="about_us_title">About Us</h1></center>
+
+    <section class="about-banner">
+      <img src="img/logo.jpg" alt="Style Slayers Banner" />
+      <div class="banner-content">
+        <h1 data-i18n="banner_heading">Make this Signature Style Of Clothing</h1>
+        <p data-i18n="banner_paragraph">
+          We offer you the best deal with fine customization for your signature style of clothing.
+        </p>
+        <button data-i18n="shop_now">Shop Now</button>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <h2 data-i18n="about_style_slayers">About Style Slayers</h2>
+      <p data-i18n="welcome_message">
+        Welcome to Style Slayers, your ultimate destination for all things fashion, beauty, and bridal. We believe that style is a powerful form of self-expression, and we're here to empower you to discover and celebrate your unique style.
+      </p>
+      <p data-i18n="collection_message">
+        With a curated collection of the latest trends in fashion and accessories, expert guidance on fragrance and beauty, and a stunning selection of bridal wear, we've got everything you need to look and feel your best.
+      </p>
+
+      <h3 data-i18n="our_passion">Our Passion</h3>
+      <p data-i18n="passion_text">
+        We're passionate about helping you find pieces that not only make you look great but also make you feel confident and empowered. Our team of style experts is constantly on the lookout for the most exciting new designers and trends, ensuring that you always have access to the freshest styles.
+      </p>
+
+      <h3 data-i18n="what_we_offer">What We Offer</h3>
+      <ul>
+        <li><strong data-i18n="fashion_accessories_title">Fashion & Accessories:</strong> <span data-i18n="fashion_accessories_desc">Discover a wide range of clothing and accessories for every occasion, from casual wear to formal attire.</span></li>
+        <li><strong data-i18n="fragrance_beauty_title">Fragrance & Beauty:</strong> <span data-i18n="fragrance_beauty_desc">Explore a curated selection of perfumes, cosmetics, and skincare products from top brands to enhance your natural beauty.</span></li>
+        <li><strong data-i18n="bridal_fashion_title">Bridal Fashion:</strong> <span data-i18n="bridal_fashion_desc">Find the wedding dress of your dreams with our exquisite collection of bridal gowns, bridesmaid dresses, and accessories.</span></li>
+      </ul>
+
+      <h3 data-i18n="our_commitment">Our Commitment</h3>
+      <p data-i18n="commitment_text">
+        At Style Slayers, we're committed to providing you with an exceptional shopping experience. We strive to offer high-quality products, personalized service, and expert advice to help you make the most of your style.
+      </p>
+      <p data-i18n="join_message">
+        Join the Style Slayers community and let us help you slay your style!
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Style Slayers. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Translation data for supported languages
+    const translations = {
+      en: {
+        nav_home: "Home",
+        nav_fashion: "Fashion & Accessories",
+        nav_beauty: "Fragrance & Beauty",
+        nav_bridal: "Bridal Fashion",
+        about_us_title: "About Us",
+        banner_heading: "Make this Signature Style Of Clothing",
+        banner_paragraph: "We offer you the best deal with fine customization for your signature style of clothing.",
+        shop_now: "Shop Now",
+        about_style_slayers: "About Style Slayers",
+        welcome_message: "Welcome to Style Slayers, your ultimate destination for all things fashion, beauty, and bridal. We believe that style is a powerful form of self-expression, and we're here to empower you to discover and celebrate your unique style.",
+        collection_message: "With a curated collection of the latest trends in fashion and accessories, expert guidance on fragrance and beauty, and a stunning selection of bridal wear, we've got everything you need to look and feel your best.",
+        our_passion: "Our Passion",
+        passion_text: "We're passionate about helping you find pieces that not only make you look great but also make you feel confident and empowered. Our team of style experts is constantly on the lookout for the most exciting new designers and trends, ensuring that you always have access to the freshest styles.",
+        what_we_offer: "What We Offer",
+        fashion_accessories_title: "Fashion & Accessories:",
+        fashion_accessories_desc: "Discover a wide range of clothing and accessories for every occasion, from casual wear to formal attire.",
+        fragrance_beauty_title: "Fragrance & Beauty:",
+        fragrance_beauty_desc: "Explore a curated selection of perfumes, cosmetics, and skincare products from top brands to enhance your natural beauty.",
+        bridal_fashion_title: "Bridal Fashion:",
+        bridal_fashion_desc: "Find the wedding dress of your dreams with our exquisite collection of bridal gowns, bridesmaid dresses, and accessories.",
+        our_commitment: "Our Commitment",
+        commitment_text: "At Style Slayers, we're committed to providing you with an exceptional shopping experience. We strive to offer high-quality products, personalized service, and expert advice to help you make the most of your style.",
+        join_message: "Join the Style Slayers community and let us help you slay your style!",
+      },
+      si: {
+        nav_home: "මුල් පිටුව",
+        nav_fashion: "ෆැෂන් සහ ඇක්සසරි",
+        nav_beauty: "සුවඳ සහ සුන්දරත්වය",
+        nav_bridal: "මංගල විලාසිතාව",
+        about_us_title: "අප ගැන",
+        banner_heading: "මෙම අත්සන් විලාසිතාව සාදන්න",
+        banner_paragraph: "ඔබගේ අත්සන් විලාසිතාව සඳහා අපි ඔබට හොඳම ගනුදෙනුව සහ සුපිරි අභිරුචි සැපයීමක් ලබා දෙන්නෙමු.",
+        shop_now: "දැන් මිලදී ගන්න",
+        about_style_slayers: "Style Slayers ගැන",
+        welcome_message: "Style Slayers වෙත සාදරයෙන් පිළිගනිමු, විලාසිතාව, සුන්දරත්වය සහ මංගල විලාසිතා සම්බන්ධ සියලු දේ සඳහා ඔබේ අතින්ම ගමනාන්තය. විලාසිතාව ස්වයං ප්‍රකාශනයේ බලවත් ආකාරයක් බව අපි විශ්වාස කරන අතර, ඔබේ අනන්‍ය විලාසිතාව සොයා ගැනීමට සහ සැමරීමට අපි මෙහි සිටිමු.",
+        collection_message: "නවතම විලාසිතා සහ ඇක්සසරි එකතුවක්, සුවඳ සහ සුන්දරත්වය පිළිබඳ විශේෂඥ උපදෙස්, සහ මංගල ඇඳුම් විශිෂ්ට එකතුවක් සමඟ, ඔබට හොඳම පෙනුම සහ හැඟීම ලබා ගැනීමට අපි සූදානම්.",
+        our_passion: "අපගේ ආශාව",
+        passion_text: "ඔබට හොඳ පෙනුමක් ලබා දීමට පමණක් නොව, විශ්වාසවන්ත සහ බලවත් හැඟීමක් ලබා දීමට අපි ආශාවෙන් යුතුව සිටිමු. අපගේ විලාසිතා විශේෂඥයින්ගේ කණ්ඩායම නවතම නිර්මාණකරුවන් සහ විලාසිතා සොයා යමින් සිටී, ඔබට නවතම විලාසිතා ලබා දීමට.",
+        what_we_offer: "අපි ඔබට ලබා දෙන දේ",
+        fashion_accessories_title: "ෆැෂන් සහ ඇක්සසරි:",
+        fashion_accessories_desc: "සෑම අවස්ථාවකටම, සාමාන්‍ය ඇඳුම් සිට නිල ඇඳුම් දක්වා විලාසිතා සහ ඇක්සසරි විවිධාකාරයක් සොයා ගන්න.",
+        fragrance_beauty_title: "සුවඳ සහ සුන්දරත්වය:",
+        fragrance_beauty_desc: "ඔබේ ස්වාභාවික සුන්දරත්වය වර්ධනය කිරීමට ප්‍රමුඛ වෙළඳ නාමවලින් සුවඳ, කාන්තා සෞන්දර්ය නිෂ්පාදන සහ සම සත්කාර නිෂ්පාදන තෝරා ගන්න.",
+        bridal_fashion_title: "මංගල විලාසිතාව:",
+        bridal_fashion_desc: "අපගේ සුන්දර මංගල ඇඳුම්, මංගල කාන්තාවන්ගේ ඇඳුම් සහ ඇක්සසරි එකතුවෙන් ඔබේ සිහිනයේ මංගල ඇඳුම සොයා ගන්න.",
+        our_commitment: "අපගේ වගකීම",
+        commitment_text: "Style Slayers හිදී, අපි ඔබට විශිෂ්ට වෙළඳපොළ අත්දැකීමක් ලබා දීමට කැපවී සිටිමු. උසස් තත්ත්වයේ නිෂ්පාදන, පුද්ගලීකරණ සේවාව සහ විශේෂඥ උපදෙස් ලබා දීමට අපි උත්සාහ කරමු.",
+        join_message: "Style Slayers ප්‍රජාවට එකතු වෙන්න, ඔබේ විලාසිතාව අපිට උදව් කරමු!",
+      },
+      ta: {
+        nav_home: "முகப்பு",
+        nav_fashion: "ஃபேஷன் மற்றும் அணிகலன்கள்",
+        nav_beauty: "வாசனை மற்றும் அழகு",
+        nav_bridal: "மணமகள் ஃபேஷன்",
+        about_us_title: "எங்களை பற்றி",
+        banner_heading: "இந்த கையொப்பமான உடை ஸ்டைலை உருவாக்கவும்",
+        banner_paragraph: "உங்கள் கையொப்பமான உடை ஸ்டைலுக்கான சிறந்த ஒப்பந்தத்தையும் நுட்பமான தனிப்பயனாக்கத்தையும் நாங்கள் வழங்குகிறோம்.",
+        shop_now: "இப்போது வாங்கவும்",
+        about_style_slayers: "ஸ்டைல் ஸ்லேயர்ஸ் பற்றி",
+        welcome_message: "ஃபேஷன், அழகு மற்றும் மணமகள் தொடர்பான அனைத்திற்கும் உங்கள் இறுதி இடமான ஸ்டைல் ஸ்லேயர்ஸுக்கு வரவேற்கிறோம். ஸ்டைல் என்பது தன்னைத்தானே வெளிப்படுத்தும் சக்திவாய்ந்த வடிவமாகும் என்று நாங்கள் நம்புகிறோம், உங்கள் தனித்துவமான ஸ்டைலை கண்டுபிடித்து கொண்டாட நாங்கள் இங்கே இருக்கிறோம்.",
+        collection_message: "புதிய ஃபேஷன் மற்றும் அணிகலன்களின் தேர்ந்தெடுக்கப்பட்ட தொகுப்பு, வாசனை மற்றும் அழகு தொடர்பான நிபுணர் வழிகாட்டல் மற்றும் அழகான மணமகள் உடைகள் தொகுப்புடன், நீங்கள் சிறந்த தோற்றத்தையும் உணர்வையும் பெற தேவையான அனைத்தும் எங்களிடம் உள்ளது.",
+        our_passion: "எங்கள் ஆர்வம்",
+        passion_text: "நாங்கள் உங்களுக்கு நன்றாக தோன்ற மட்டுமல்ல, நம்பிக்கையுடன் மற்றும் அதிகாரத்துடன் உணர உதவ ஆர்வமாக இருக்கிறோம். எங்கள் ஸ்டைல் நிபுணர் குழு எப்போதும் புதிய வடிவமைப்பாளர்கள் மற்றும் போக்குகளை தேடி, நீங்கள் எப்போதும் புதிய ஸ்டைல்கள் கிடைக்க உறுதி செய்கிறது.",
+        what_we_offer: "நாங்கள் வழங்குவது",
+        fashion_accessories_title: "ஃபேஷன் மற்றும் அணிகலன்கள்:",
+        fashion_accessories_desc: "சாதாரண உடைகள் முதல் உத்தியோகபூர்வ உடைகள் வரை ஒவ்வொரு நிகழ்ச்சிக்கும் பொருத்தமான உடைகள் மற்றும் அணிகலன்களை கண்டறியவும்.",
+        fragrance_beauty_title: "வாசனை மற்றும் அழகு:",
+        fragrance_beauty_desc: "உங்கள் இயல்பான அழகை மேம்படுத்த முன்னணி பிராண்டுகளின் வாசனை, அழகு மற்றும் தோல் பராமரிப்பு தயாரிப்புகளை ஆராயவும்.",
+        bridal_fashion_title: "மணமகள் ஃபேஷன்:",
+        bridal_fashion_desc: "எங்கள் அழகான மணமகள் உடைகள், மணமகள் துணை உடைகள் மற்றும் அணிகலன்களின் தொகுப்புடன் உங்கள் கனவு திருமண உடையை கண்டறியவும்.",
+        our_commitment: "எங்கள் உறுதி",
+        commitment_text: "ஸ்டைல் ஸ்லேயர்ஸில், உங்களுக்கு சிறந்த ஷாப்பிங் அனுபவத்தை வழங்க உறுதி செய்கிறோம். உயர்தர தயாரிப்புகள், தனிப்பட்ட சேவை மற்றும் நிபுணர் ஆலோசனைகளை வழங்க முயல்கிறோம்.",
+        join_message: "ஸ்டைல் ஸ்லேயர்ஸ் சமூகத்தில் சேர்ந்து உங்கள் ஸ்டைலை மேம்படுத்த உதவுவோம்!",
+      },
+      ja: {
+        nav_home: "ホーム",
+        nav_fashion: "ファッション＆アクセサリー",
+        nav_beauty: "フレグランス＆ビューティー",
+        nav_bridal: "ブライダルファッション",
+        about_us_title: "私たちについて",
+        banner_heading: "このシグネチャースタイルの服を作ろう",
+        banner_paragraph: "あなたのシグネチャースタイルの服のために最高の取引と細かいカスタマイズを提供します。",
+        shop_now: "今すぐ購入",
+        about_style_slayers: "スタイルスレイヤーズについて",
+        welcome_message: "ファッション、美容、ブライダルのすべてのための究極の目的地、スタイルスレイヤーズへようこそ。スタイルは自己表現の強力な形であると信じており、あなたが独自のスタイルを発見し祝うことを支援します。",
+        collection_message: "最新のファッションとアクセサリーの厳選されたコレクション、香水と美容の専門的なガイダンス、そして素晴らしいブライダルウェアのセレクションで、最高の見た目と気分を提供します。",
+        our_passion: "私たちの情熱",
+        passion_text: "私たちは、あなたが素敵に見えるだけでなく、自信と力を感じられるアイテムを見つけるお手伝いを情熱的に行っています。スタイルの専門家チームは、常に最もエキサイティングな新しいデザイナーとトレンドを探しており、常に新鮮なスタイルにアクセスできるようにしています。",
+        what_we_offer: "私たちの提供",
+        fashion_accessories_title: "ファッション＆アクセサリー：",
+        fashion_accessories_desc: "カジュアルからフォーマルまで、あらゆる場面に対応した幅広い衣服とアクセサリーを発見してください。",
+        fragrance_beauty_title: "フレグランス＆ビューティー：",
+        fragrance_beauty_desc: "自然な美しさを引き立てるために、トップブランドの香水、化粧品、スキンケア製品を厳選してご紹介します。",
+        bridal_fashion_title: "ブライダルファッション：",
+        bridal_fashion_desc: "夢のウェディングドレスを、素晴らしいブライダルガウン、ブライズメイドドレス、アクセサリーのコレクションから見つけてください。",
+        our_commitment: "私たちの約束",
+        commitment_text: "スタイルスレイヤーズでは、優れたショッピング体験を提供することに全力を尽くしています。高品質な製品、パーソナライズされたサービス、専門的なアドバイスを提供し、あなたのスタイルを最大限に活かすお手伝いをします。",
+        join_message: "スタイルスレイヤーズのコミュニティに参加して、あなたのスタイルを極めましょう！",
+      },
+      ko: {
+        nav_home: "홈",
+        nav_fashion: "패션 및 액세서리",
+        nav_beauty: "향수 및 뷰티",
+        nav_bridal: "웨딩 패션",
+        about_us_title: "회사 소개",
+        banner_heading: "이 시그니처 의류 스타일을 만드세요",
+        banner_paragraph: "당신의 시그니처 의류 스타일을 위한 최고의 거래와 세밀한 맞춤화를 제공합니다.",
+        shop_now: "지금 쇼핑하기",
+        about_style_slayers: "스타일 슬레이어즈 소개",
+        welcome_message: "패션, 뷰티, 웨딩의 모든 것을 위한 궁극의 목적지, 스타일 슬레이어즈에 오신 것을 환영합니다. 스타일은 강력한 자기 표현 형태라고 믿으며, 여러분이 독특한 스타일을 발견하고 축하할 수 있도록 돕습니다.",
+        collection_message: "최신 패션 및 액세서리 엄선 컬렉션, 향수 및 뷰티 전문가의 안내, 그리고 멋진 웨딩웨어 셀렉션으로 최고의 모습과 느낌을 제공합니다.",
+        our_passion: "우리의 열정",
+        passion_text: "우리는 여러분이 멋져 보일 뿐만 아니라 자신감 있고 힘을 느낄 수 있도록 돕는 데 열정을 가지고 있습니다. 스타일 전문가 팀은 가장 흥미로운 새로운 디자이너와 트렌드를 끊임없이 찾아 신선한 스타일에 항상 접근할 수 있도록 합니다.",
+        what_we_offer: "우리가 제공하는 것",
+        fashion_accessories_title: "패션 및 액세서리:",
+        fashion_accessories_desc: "캐주얼부터 포멀까지 모든 경우에 적합한 다양한 의류 및 액세서리를 발견하세요.",
+        fragrance_beauty_title: "향수 및 뷰티:",
+        fragrance_beauty_desc: "자연스러운 아름다움을 향상시키기 위해 최고 브랜드의 향수, 화장품 및 스킨케어 제품을 엄선했습니다.",
+        bridal_fashion_title: "웨딩 패션:",
+        bridal_fashion_desc: "아름다운 웨딩 가운, 들러리 드레스 및 액세서리 컬렉션에서 꿈의 웨딩 드레스를 찾아보세요.",
+        our_commitment: "우리의 약속",
+        commitment_text: "스타일 슬레이어즈는 탁월한 쇼핑 경험을 제공하기 위해 최선을 다하고 있습니다. 고품질 제품, 개인 맞춤 서비스 및 전문가 조언을 제공하여 스타일을 최대한 활용할 수 있도록 돕습니다.",
+        join_message: "스타일 슬레이어즈 커뮤니티에 가입하여 스타일을 완성하세요!",
+      },
+    fr: {
+  nav_home: "Accueil",
+  nav_fashion: "Mode & Accessoires",
+  nav_beauty: "Parfum & Beauté",
+  nav_bridal: "Mode Nuptiale",
+  about_us_title: "À Propos",
+  banner_heading: "Créez ce style signature de vêtements",
+  banner_paragraph: "Nous vous offrons la meilleure offre avec une personnalisation fine pour votre style signature de vêtements.",
+  shop_now: "Acheter Maintenant",
+  about_style_slayers: "À propos de Style Slayers",
+  welcome_message: "Bienvenue chez Style Slayers, votre destination ultime pour tout ce qui concerne la mode, la beauté et la mariée. Nous croyons que le style est une forme puissante d'expression de soi, et nous sommes là pour vous aider à découvrir et célébrer votre style unique.",
+  collection_message: "Avec une collection sélectionnée des dernières tendances en mode et accessoires, des conseils d'experts en parfum et beauté, et une sélection époustouflante de vêtements de mariée, nous avons tout ce dont vous avez besoin pour être au mieux de votre forme.",
+  our_passion: "Notre Passion",
+  passion_text: "Nous sommes passionnés par vous aider à trouver des pièces qui non seulement vous font paraître génial mais aussi vous font sentir confiant et puissant. Notre équipe d'experts en style est constamment à la recherche des nouveaux designers et tendances les plus excitants, garantissant que vous avez toujours accès aux styles les plus frais.",
+  what_we_offer: "Ce que nous offrons",
+  fashion_accessories_title: "Mode & Accessoires :",
+  fashion_accessories_desc: "Découvrez une large gamme de vêtements et accessoires pour chaque occasion, du décontracté au formel.",
+  fragrance_beauty_title: "Parfum & Beauté :",
+  fragrance_beauty_desc: "Explorez une sélection choisie de parfums, cosmétiques et produits de soin de la peau des meilleures marques pour sublimer votre beauté naturelle.",
+  bridal_fashion_title: "Mode Nuptiale :",
+  bridal_fashion_desc: "Trouvez la robe de mariée de vos rêves avec notre collection exquise de robes de mariée, robes de demoiselle d'honneur et accessoires.",
+  our_commitment: "Notre Engagement",
+  commitment_text: "Chez Style Slayers, nous nous engageons à vous offrir une expérience d'achat exceptionnelle. Nous nous efforçons d'offrir des produits de haute qualité, un service personnalisé et des conseils d'experts pour vous aider à tirer le meilleur parti de votre style.",
+  join_message: "Rejoignez la communauté Style Slayers et laissez-nous vous aider à maîtriser votre style!",
+},
+ };
+    // Function to update page text based on selected language
+    function updateLanguage(lang) {
+      document.documentElement.lang = lang;
+      const elements = document.querySelectorAll('[data-i18n]');
+      elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+    }
+
+    // Event listener for language selector dropdown
+    document.getElementById('lang-select').addEventListener('change', (e) => {
+      updateLanguage(e.target.value);
+      localStorage.setItem('preferredLang', e.target.value);
+    });
+
+    // On page load, check saved language or default to English
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('preferredLang') || 'en';
+      document.getElementById('lang-select').value = savedLang;
+      updateLanguage(savedLang);
+    });
+  </script>
+</body>
+</html>
