@@ -5,8 +5,6 @@ const totalSlides = slides.children.length;
 const nextButton = document.querySelector('.next-button');
 const prevButton = document.querySelector('.prev-button');
 
-
-// Change slide every 3 seconds
 setInterval(showNextSlide, 3000);
 function showNextSlide() {
     currentIndex = (currentIndex + 1) % totalSlides;
