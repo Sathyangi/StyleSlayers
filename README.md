@@ -23,8 +23,7 @@ Responsive Design: Styled with CSS (style.css, about.css, beauty.css, bridal_fas
 
 <img width="1904" height="811" alt="image" src="https://github.com/user-attachments/assets/f7e662de-0e0c-4c02-86f5-6e2383a6af2d" />
 <img width="1881" height="781" alt="image" src="https://github.com/user-attachments/assets/f3a07bc7-45e2-4cc7-a1b2-2b582f312f9f" />
-![Uploading image.png…]()
-
+<img width="1853" height="788" alt="image" src="https://github.com/user-attachments/assets/7ba1d4e5-57db-4d9c-9112-bc738b1ab47c" />
 
 Technologies Used
 
