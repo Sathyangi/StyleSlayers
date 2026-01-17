@@ -4,6 +4,8 @@ Style Slayers: Your Fashion & Beauty Hub (Frontend)
 
 Welcome to the frontend repository for Style Slayers, your ultimate online destination for fashion, beauty, and bridal wear. This project delivers a sleek and intuitive user experience, showcasing a wide range of products across various categories.
 
+<img width="1888" height="808" alt="image" src="https://github.com/user-attachments/assets/dc11ceb5-7e5f-49d9-a6ac-d2992a754958" />
+
 Live Website
 
 Explore the live version of the Style Slayers website here:
@@ -18,6 +20,11 @@ Search Functionality: Find specific items using the integrated search bar on pro
 Dynamic Image Sliders: Engaging visual sliders for featured content on category pages, with automatic transitions and manual navigation controls (implemented in Slide.js).
 Multilingual Support: The "About Us" page (aboutnew.html) includes robust functionality for language selection, supporting English, Sinhala, Tamil, Japanese, Korean, and French.
 Responsive Design: Styled with CSS (style.css, about.css, beauty.css, bridal_fashion.css, fashion.css, getapp.css) to provide a consistent and appealing experience across various devices.
+
+<img width="1904" height="811" alt="image" src="https://github.com/user-attachments/assets/f7e662de-0e0c-4c02-86f5-6e2383a6af2d" />
+<img width="1881" height="781" alt="image" src="https://github.com/user-attachments/assets/f3a07bc7-45e2-4cc7-a1b2-2b582f312f9f" />
+![Uploading image.png…]()
+
 
 Technologies Used
 
